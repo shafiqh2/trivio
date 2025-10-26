@@ -37,6 +37,7 @@ export default function Home() {
         .order("name");
 
       if (error) throw error;
+      console.log("Data: ", data)
       setCategories(data || []);
     } catch (error) {
       console.error("Error loading categories:", error);
